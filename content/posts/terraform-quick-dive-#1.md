@@ -1,12 +1,12 @@
 ---
 title: "Terraform: Quick Dive #1"
-date: 2024-01-14T07:07:07+01:00
+date: 2024-08-20T07:07:07+01:00
 language: en
-featured_image: ../assets/images/global/cloudtinkerers.png
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
+featured_image: ../assets/images/posts/terraform-quick-dive-1.jpg
+summary: Discover how to get started with Terraform in AWS.
+description: Discover how to get started with Terraform in AWS.
 author: Conor
-#authorimage: ../assets/images/global/author.webp
+authorimage: ../assets/images/global/icon.webp
 categories: cloud, devops
 tags: cloud, aws, infrastructure, infrastructure as code
 ---

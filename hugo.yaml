@@ -47,8 +47,9 @@ markup:
       xhtml: false
 
 params:
-  author: Nusser Studios
+  author: Cloud Tinkerers
   authorimage: ../assets/images/global/author.webp
+  heropic: images/global/cloudtinkerers.png
   og_image: /images/tailbliss-cover.png
   moto: "Super Fast, and Flexible"
   description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
