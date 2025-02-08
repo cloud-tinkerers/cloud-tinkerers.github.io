@@ -51,23 +51,23 @@ params:
   authorimage: ../assets/images/global/author.webp
   heropic: images/global/cloudtinkerers.png
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  moto: "Where Cloud Pros and Enthusiasts Connect"
+  description: "A community-driven hub for cloud engineers, DevOps pros, and system admins. We dive deep into AWS, Azure, Docker, Kubernetes, and all things cloud. Whether you're troubleshooting, building, or just tinkering—you're in the right place."
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
   p1:
-    heading: "Our mission"
+    heading: "The Tinkerer's Mindset"
     image: "images/pages/our-mission.png"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
-      - text: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."
-      - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
+      - text: "Cloud computing isn’t just about servers—it’s an ever-evolving space that thrives on hands-on learning. Cloud Tinkerers is a community for those who love to experiment, break things, fix them, and share insights. Whether you're fine-tuning CI/CD pipelines, managing infrastructure, or exploring Kubernetes, you'll find like-minded professionals here."
+      - text: "We focus on the Ops side of the slash, but developers, security pros, and tech enthusiasts are always welcome. This is a space where questions are encouraged, solutions are shared, and continuous learning is the norm. Cloud mastery isn’t about knowing everything—it’s about tinkering, improving, and growing together."
+      - text: "From AWS and Azure to Docker and Terraform, Cloud Tinkerers is where cloud professionals connect, troubleshoot, and refine their skills. Whether you're here to learn, network, or just geek out about infrastructure, you're in the right place."
   p2:
-    heading: "Just in time for Hacktoberfest with JIT Tailwind."
+    heading: "Cloud Tinkerers: More Than Just a Community"
     image: "images/pages/hacktoberfest.jpg"
     content:
-      - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at purus non enim commodo tincidunt vel in nulla. Aenean pretium dolor non ultricies bibendum. Etiam quis blandit enim. Nunc condimentum ut lorem in faucibus. Phasellus varius ligula et commodo tristique. Nunc sodales nisl nec laoreet vehicula. Donec velit nibh, sollicitudin at nulla a, egestas dignissim eros. Sed lacinia hendrerit interdum. Vestibulum pellentesque sem venenatis nisl tempor accumsan sit amet tempus felis. Mauris leo diam, porttitor nec bibendum id, tempus ac nulla. Etiam congue ornare erat at convallis. Donec in nisi dapibus, mattis risus vel, imperdiet enim. Donec fermentum sit amet tortor nec tincidunt. Nam nec lectus tortor. Nunc sit amet laoreet orci, porta ornare massa. Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim arcu eleifend."
+      - text: "Cloud Tinkerers is a space where cloud professionals learn, mentor, and solve real-world challenges. Whether you’re breaking into tech, refining your cloud skills, or optimizing infrastructure, we offer career mentoring, skills coaching, and consultancy services. From resume reviews and interview prep to hands-on guidance in Linux, AWS, Terraform, and CI/CD, we help you grow. Need expert insights on scalability, cost optimization, or infrastructure design? Our consultancy services provide practical solutions tailored to your needs. Let’s build, learn, and solve together. 🚀"
   p3:
     heading: "Backed by world-renowned investors"
     content:
