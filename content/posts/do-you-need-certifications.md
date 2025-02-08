@@ -3,8 +3,8 @@ title: "Do you need certifications?"
 date: 2024-10-18T07:07:07+01:00
 language: en
 featured_image: ../assets/images/posts/do-you-need-certifications.jpg
-summary: Discover how to get started with Terraform in AWS.
-description: Discover how to get started with Terraform in AWS.
+summary: Will certifications slingshot your career forward?
+description: Will certifications slingshot your career forward?
 author: Conor
 authorimage: ../assets/images/global/icon.webp
 categories: cloud, career
