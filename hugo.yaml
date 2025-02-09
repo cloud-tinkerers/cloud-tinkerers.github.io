@@ -54,7 +54,7 @@ params:
   moto: "Where Cloud Pros and Enthusiasts Connect"
   description: "A community-driven hub for cloud engineers, DevOps pros, and system admins. We dive deep into AWS, Azure, Docker, Kubernetes, and all things cloud. Whether you're troubleshooting, building, or just tinkering—you're in the right place."
   disable_theme_toggle: false
-  disable_stay_uptodate: false
+  disable_stay_uptodate: true
 
   p1:
     heading: "The Tinkerer's Mindset"
