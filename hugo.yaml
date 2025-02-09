@@ -118,10 +118,10 @@ menu:
       name: Home
       url: /
       weight: 10
-    - identifier: posts
-      name: Posts
+    - identifier: articles
+      name: Articles
       #pre: dropdown
-      url: /posts
+      url: /articles
       weight: 20
     - identifier: about
       name: About
@@ -160,9 +160,9 @@ menu:
       name: About
       url: /about/
       weight: 10
-    - identifier: posts
-      name: Posts
-      url: /posts/
+    - identifier: articles
+      name: Articles
+      url: /articles/
       weight: 20
 
 taxonomies:
