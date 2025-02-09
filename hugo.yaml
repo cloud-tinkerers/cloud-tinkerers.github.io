@@ -68,24 +68,24 @@ params:
     image: "images/pages/hacktoberfest.jpg"
     content:
       - text: "Cloud Tinkerers is a space where cloud professionals learn, mentor, and solve real-world challenges. Whether you’re breaking into tech, refining your cloud skills, or optimizing infrastructure, we offer career mentoring, skills coaching, and consultancy services. From resume reviews and interview prep to hands-on guidance in Linux, AWS, Terraform, and CI/CD, we help you grow. Need expert insights on scalability, cost optimization, or infrastructure design? Our consultancy services provide practical solutions tailored to your needs. Let’s build, learn, and solve together. 🚀"
-  p3:
-    heading: "Backed by world-renowned investors"
-    content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
-    links:
-      - text: Meet our investors and advisors
-        url: "#"
-    logos:
-      - identifier: a
-        image: "images/global/sample-logo.svg"
-        alt: "a"
-      - identifier: b
-      - identifier: c
-      - identifier: d
-      - identifier: e
-      - identifier: f
+  # p3:
+  #   heading: "Backed by world-renowned investors"
+  #   content:
+  #     - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
+  #   links:
+  #     - text: Meet our investors and advisors
+  #       url: "#"
+  #   logos:
+  #     - identifier: a
+  #       image: "images/global/sample-logo.svg"
+  #       alt: "a"
+  #     - identifier: b
+  #     - identifier: c
+  #     - identifier: d
+  #     - identifier: e
+  #     - identifier: f
   p4:
-    heading: "From the blog"
+    heading: "Check out our articles"
     content:
       - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
   p5:
@@ -114,45 +114,38 @@ params:
 
 menu:
   main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
+    - identifier: home
+      name: Home
+      url: /
       weight: 10
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: posts
+      name: Posts
+      #pre: dropdown
+      url: /posts
       weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
-      weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
-  categories:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
     - identifier: about
       name: About
-      url: /about/
+      url: /about
+      weight: 30
+  categories:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
       weight: 20
   dropdown:
-    - identifier: appearance
+    - identifier: categories
       pre: stars # can be stars, comments or piechart
-      name: Appearance
+      name: Categories
       post: "Easy customization"
       url: "#"
       weight: 10
-    - identifier: comments
+    - identifier: tags
       pre: comments # can be stars, comments or piechart
-      name: Comments
+      name: Tags
       post: "Check your latest comments"
       url: "#"
       weight: 20
@@ -167,22 +160,10 @@ menu:
       name: About
       url: /about/
       weight: 10
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
+    - identifier: posts
+      name: Posts
+      url: /posts/
       weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
 
 taxonomies:
   category: Categories
@@ -214,4 +195,4 @@ privacy:
 module:
   hugoVersion:
     extended: true
-    min: "0.114.0"
+    min: "0.143.0"

@@ -7,7 +7,7 @@ summary: Discover how to get started with Terraform in AWS.
 description: Discover how to get started with Terraform in AWS.
 author: Conor
 authorimage: ../assets/images/global/icon.webp
-categories: cloud, devops
+categories: infrastructure as code
 tags: cloud, aws, infrastructure, infrastructure as code
 ---
 In [part one](https://cloudtinkerers.com/posts/terraform-quick-dive-%231/) I posed a handful of challenges to help you develop your Terraform skills further. I encourage you to have a go at them yourself first, that exploration and struggle is where true learning happens. But I am going to solve the challenges in this post.
@@ -146,6 +146,8 @@ When you apply this your instance should have the project name:
 
 ![variable](/images/variable.png)
 
+---
+
 # Challenge #3
 
 *Investigate the terraform.tfstate file and learn more about what Terraform state is.*
@@ -172,7 +174,7 @@ By contrast, Terraform keeps track of state. If I tell Terraform I want 1 server
 
 This excerpt shows a few of the details that have been tracked for our aws_instance resource. It tells us the Terraform name for the resource, the AMI that was used to create it, the ARN/InstanceID, the fact that it has a public IP address and the availability zone that it was placed in.
 
-If you were to destroy your infrastructure through Terraform, this would disappear. *However*, if you were to terminate the instance through AWS, this would not be recorded in the state because it happened outside of Terraform. You have now created drift. The next time you you apply your Terraform it will compare your Terraform configuration against the state, and then also against the infrastructure. It will tell you that it wants to create this instance because it has detected that it no longer exists.
+If you were to destroy your infrastructure through Terraform, this would disappear. *However*, if you were to terminate the instance through AWS, this would not be recorded in the state because it happened outside of Terraform. You have now created drift. The next time you apply your Terraform it will compare your Terraform configuration against the state, and then also against the infrastructure. It will tell you that it wants to create this instance because it has detected that it no longer exists.
 
 It is important to note that 'local state' (what we're currently using) is a bad practise in work environments because your colleagues who may also be working on your infrastructure will not have access to your local state file. Terraform offers 'remote state' to solve this problem, and can be configured to use an S3 bucket along with various other options.
 

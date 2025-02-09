@@ -7,7 +7,7 @@ summary: Discover how to get started with Terraform in AWS.
 description: Discover how to get started with Terraform in AWS.
 author: Conor
 authorimage: ../assets/images/global/icon.webp
-categories: cloud, devops
+categories: infrastructure as code
 tags: cloud, aws, infrastructure, infrastructure as code
 ---
 There are many Terraform tutorials out there, not least of which are the official Terraform docs which are actually very good. Most tutorials, however, insist upon you a wealth of knowledge before you touch the tool. This isn't how I like to learn, and maybe it's not how you like to learn, either.

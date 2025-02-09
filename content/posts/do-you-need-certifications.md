@@ -7,7 +7,7 @@ summary: Will certifications slingshot your career forward?
 description: Will certifications slingshot your career forward?
 author: Conor
 authorimage: ../assets/images/global/icon.webp
-categories: cloud, career
+categories: career
 tags: career, certifications, cloud
 ---
 
