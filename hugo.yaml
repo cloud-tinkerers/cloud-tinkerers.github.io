@@ -116,41 +116,41 @@ menu:
       weight: 10
     - identifier: articles
       name: Articles
-      #pre: dropdown
       url: /articles
       weight: 20
+    - identifier: dropdown
+      name: Categories
+      pre: dropdown
+      weight: 30
     - identifier: about
       name: About
       url: /about
-      weight: 30
-  categories:
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
+      weight: 40
   dropdown:
-    - identifier: categories
-      pre: stars # can be stars, comments or piechart
-      name: Categories
-      post: "Easy customization"
-      url: "#"
+    - identifier: infrastructure as code
+      name: Infrastructure as Code
+      url: /categories/infrastructure-as-code/
       weight: 10
-    - identifier: tags
-      pre: comments # can be stars, comments or piechart
-      name: Tags
-      post: "Check your latest comments"
-      url: "#"
+    - identifier: cloud
+      name: Cloud
+      url: /categories/cloud/
       weight: 20
-    - identifier: analytics
-      pre: piechart # can be stars, comments or piechart
-      name: Analytics
-      post: "Take a look at your statistics"
-      url: "#"
+    - identifier: devops and cicd
+      name: DevOps and CICD
+      url: /categories/devops-and-cicd/
       weight: 30
+    - identifier: containers and orchestration
+      name: Containers and Orchestration
+      url: /categories/containers-and-orchestration/
+      weight: 40
+    - identifier: linux
+      name: Linux
+      url: /categories/linux/
+      weight: 50
+    - identifier: career
+      name: Career
+      url: /categories/career/
+      weight: 60
   footer:
     - identifier: about
       name: About
