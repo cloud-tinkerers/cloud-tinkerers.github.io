@@ -61,13 +61,11 @@ params:
     image: "images/pages/our-mission.png"
     content:
       - text: "Cloud computing isn’t just about servers—it’s an ever-evolving space that thrives on hands-on learning. Cloud Tinkerers is a community for those who love to experiment, break things, fix them, and share insights. Whether you're fine-tuning CI/CD pipelines, managing infrastructure, or exploring Kubernetes, you'll find like-minded professionals here."
-      - text: "We focus on the Ops side of the slash, but developers, security pros, and tech enthusiasts are always welcome. This is a space where questions are encouraged, solutions are shared, and continuous learning is the norm. Cloud mastery isn’t about knowing everything—it’s about tinkering, improving, and growing together."
-      - text: "From AWS and Azure to Docker and Terraform, Cloud Tinkerers is where cloud professionals connect, troubleshoot, and refine their skills. Whether you're here to learn, network, or just geek out about infrastructure, you're in the right place."
-  p2:
-    heading: "Cloud Tinkerers: More Than Just a Community"
-    image: "images/pages/hacktoberfest.jpg"
-    content:
-      - text: "Cloud Tinkerers is a space where cloud professionals learn, mentor, and solve real-world challenges. Whether you’re breaking into tech, refining your cloud skills, or optimizing infrastructure, we offer career mentoring, skills coaching, and consultancy services. From resume reviews and interview prep to hands-on guidance in Linux, AWS, Terraform, and CI/CD, we help you grow. Need expert insights on scalability, cost optimization, or infrastructure design? Our consultancy services provide practical solutions tailored to your needs. Let’s build, learn, and solve together. 🚀"
+      - text: "Cloud Tinkerers is a space where cloud professionals learn, mentor, and solve real-world challenges. Linux, AWS, Terraform, and CI/CD, whatever it is, we help you grow."
+      - text: "Let’s build, learn, and solve together. 🚀"
+  # p2:
+  #   heading: "Cloud Tinkerers: More Than Just a Community"
+  #   image: "images/pages/hacktoberfest.jpg"
   # p3:
   #   heading: "Backed by world-renowned investors"
   #   content:
@@ -86,8 +84,6 @@ params:
   #     - identifier: f
   p4:
     heading: "Check out our articles"
-    content:
-      - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
   p5:
     heading: "Stay Up to Date"
     content:
