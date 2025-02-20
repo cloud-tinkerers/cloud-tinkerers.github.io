@@ -4882,10 +4882,33 @@ EmojiSymbols;
   }
 }
 
+
+/* Image Centered for About Us Page */
 .prose img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 60%;
   border-radius: 10px;
+}
+
+/* Join the discord CSS Button Code */
+.btn {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  background: #9515ce;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #13162f;
+  text-decoration: none;
 }
