@@ -1,0 +1,9 @@
+{
+  "m.homeserver": {
+    "base_url": "https://matrix.cloudtinkerers.com"
+  },
+  "io.element.rtc": {
+    "uri": "https://rtc.cloudtinkerers.com"
+  },
+  "org.matrix.msc3401.call.preferred_backend": "livekit"
+}
