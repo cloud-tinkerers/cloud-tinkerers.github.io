@@ -5,5 +5,11 @@
   "io.element.rtc": {
     "uri": "https://rtc.cloudtinkerers.com"
   },
-  "org.matrix.msc3401.call.preferred_backend": "livekit"
+  "org.matrix.msc3401.call.preferred_backend": "livekit",
+  "org.matrix.msc4143.rtc_foci": [
+    {
+        "type": "livekit",
+        "livekit_service_url": "https://rtc.cloudtinkerers.com/livekit/jwt"
+    }
+  ]
 }
