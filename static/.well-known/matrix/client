@@ -2,6 +2,10 @@
   "m.homeserver": {
     "base_url": "https://matrix.cloudtinkerers.com"
   },
+  "m.authentication": {
+    "issuer": "https://auth.cloudtinkerers.com/",
+    "account": "https://auth.cloudtinkerers.com/account"
+  },
   "io.element.rtc": {
     "uri": "https://rtc.cloudtinkerers.com"
   },
