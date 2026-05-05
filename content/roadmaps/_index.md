@@ -12,3 +12,9 @@ Simple, beginner-friendly learning paths for people who want to grow in cloud, D
 
 - [DevOps Roadmap](devops/)
 - [Linux Roadmap](linux/)
+- [Version Control Roadmap](version-control/)
+- [Scripting Roadmap](scripting/)
+- [Cloud Roadmap](cloud/)
+- [Containers Roadmap](containers/)
+- [CI/CD Roadmap](cicd/)
+- [IaC & Monitoring Roadmap](iac-monitoring/)
