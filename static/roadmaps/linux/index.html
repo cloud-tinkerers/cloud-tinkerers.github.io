@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Linux & Command Line Roadmap for Beginners 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --accent: #e05c2a;
+    --accent2: #2a7ae0;
+    --muted: #6b7280;
+    --light-bg: #f7f5f0;
+    --card-bg: #ffffff;
+    --border: #e5e0d8;
+    --step1: #e05c2a;
+    --step2: #d44d8a;
+    --step3: #7c3aed;
+    --step4: #2a7ae0;
+    --step5: #059669;
+    --step6: #b45309;
+    --step7: #0891b2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--light-bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px 64px 80px;
+  }
+
+  /* HEADER */
+  .header {
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 44px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .subtitle {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 560px;
+    font-weight: 300;
+  }
+  .meta {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* BREADCRUMB */
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+  }
+  .breadcrumb .crumb-active {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .breadcrumb .sep {
+    color: var(--border);
+  }
+
+  /* INTRO */
+  .intro {
+    background: var(--ink);
+    color: white;
+    padding: 28px 32px;
+    border-radius: 4px;
+    margin-bottom: 44px;
+  }
+  .intro p {
+    font-size: 15px;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+  .intro strong {
+    color: #f8b56a;
+    font-weight: 600;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    color: var(--ink);
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  /* STEPS */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 44px;
+  }
+
+  .step {
+    display: flex;
+    gap: 0;
+    position: relative;
+  }
+
+  .step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    flex-shrink: 0;
+  }
+
+  .step-num {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 2px;
+  }
+
+  .step-line {
+    width: 2px;
+    flex: 1;
+    min-height: 20px;
+    background: var(--border);
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  .step:last-child .step-line {
+    display: none;
+  }
+
+  .step-body {
+    padding-left: 20px;
+    padding-bottom: 32px;
+    flex: 1;
+  }
+
+  .step-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+
+  .step-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .step-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    color: white;
+  }
+
+  .step-desc {
+    color: #374151;
+    font-size: 14.5px;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+
+  .tools-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .tool-chip {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--light-bg);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+
+  /* TIPS SECTION */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+
+  .tip-card {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+  .tip-icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .tip-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+
+  .tip-text {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* TIMELINE */
+  .timeline-bar {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin-bottom: 44px;
+  }
+
+  .timeline-bar h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: var(--ink);
+  }
+
+  .timeline-track {
+    display: flex;
+    gap: 0;
+    height: 36px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  .t-seg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* CLOSING */
+  .closing {
+    border-top: 3px solid var(--ink);
+    padding-top: 28px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .closing-quote {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--border);
+    flex-shrink: 0;
+    margin-top: -8px;
+  }
+
+  .closing-text {
+    font-size: 14.5px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .closing-text strong {
+    color: var(--ink);
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; }
+    .page { padding: 40px; max-width: 100%; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="breadcrumb">
+      <span>DevOps Roadmap</span>
+      <span class="sep">›</span>
+      <span>Stage 1 of 7</span>
+      <span class="sep">›</span>
+      <span class="crumb-active">Linux &amp; The Command Line</span>
+    </div>
+    <div class="tag">Stage 1 · Foundation</div>
+    <h1>Linux &amp; The<br/><em>Command Line</em></h1>
+    <p class="subtitle">Your very first step into DevOps — a plain-English guide to getting comfortable with Linux, the terminal, and the tools every server in the world runs on.</p>
+    <div class="meta">Updated May 2025 &nbsp;·&nbsp; 7-Stage Deep Dive &nbsp;·&nbsp; 3–4 Week Journey</div>
+  </div>
+
+  <!-- INTRO BOX -->
+  <div class="intro">
+    <p>
+      <strong>Why Linux?</strong> Over 96% of the world's servers run Linux. Every cloud platform, every Docker container, and every DevOps pipeline assumes you know it. The good news: you don't need to become a Linux expert overnight. You just need to reach a level where the terminal feels like a tool, not a mystery. That's exactly what this roadmap gives you.
+      <br/><br/>
+      Think of the command line as texting with your computer — instead of clicking buttons, you type short instructions and the computer listens. It's faster, more powerful, and once it clicks, you'll wonder how you ever lived without it.
+    </p>
+  </div>
+
+  <!-- ROADMAP STEPS -->
+  <div class="section-title">Your 7-Stage Linux Roadmap</div>
+
+  <div class="steps">
+
+    <!-- STEP 1 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step1);">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Install Linux & Open a Terminal</span>
+          <span class="step-badge" style="background:var(--step1);">Day One</span>
+        </div>
+        <p class="step-desc">
+          Before you can learn Linux, you need to run it. The easiest way is to install <strong>Ubuntu</strong> — the most beginner-friendly Linux version — inside a free tool called VirtualBox. This lets you run Linux on your existing Windows or Mac computer without changing anything. Install it, open the terminal (the black box with a blinking cursor), and type your first command: <code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">ls</code>. Congratulations — you're in.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Ubuntu 24.04 LTS</span>
+          <span class="tool-chip">VirtualBox (free)</span>
+          <span class="tool-chip">WSL2 (Windows users)</span>
+          <span class="tool-chip">Terminal / Bash</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step2);">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Navigate the File System</span>
+          <span class="step-badge" style="background:var(--step2);">Core Skill</span>
+        </div>
+        <p class="step-desc">
+          Linux organises everything into folders, just like Windows or Mac — but you move around using text commands instead of clicking. Learn to list what's in a folder, move into it, go back up, and figure out where you are. These four commands — <code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">ls</code>, <code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">cd</code>, <code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">pwd</code>, and <code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">mkdir</code> — are the foundation of everything else.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">ls, cd, pwd</span>
+          <span class="tool-chip">mkdir, rmdir</span>
+          <span class="tool-chip">Absolute vs relative paths</span>
+          <span class="tool-chip">Hidden files (.dotfiles)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step3);">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Create, Edit & Manage Files</span>
+          <span class="step-badge" style="background:var(--step3);">Daily Use</span>
+        </div>
+        <p class="step-desc">
+          Learn to create files, view their contents, copy them, move them, and delete them — all from the terminal. Then learn to edit files using a text editor called <strong>nano</strong> (beginner-friendly) or eventually <strong>vim</strong> (powerful, but has a learning curve). Also learn about file permissions: in Linux, every file has rules about who can read, write, or run it — and you'll need to change those rules often.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">touch, cp, mv, rm</span>
+          <span class="tool-chip">cat, less, head, tail</span>
+          <span class="tool-chip">nano / vim</span>
+          <span class="tool-chip">chmod, chown</span>
+          <span class="tool-chip">File permissions (rwx)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step4);">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Users, Processes & Installing Software</span>
+          <span class="step-badge" style="background:var(--step4);">System Control</span>
+        </div>
+        <p class="step-desc">
+          Linux is a multi-user system. Learn the difference between a regular user and a superuser (<strong>sudo</strong> — like "admin mode"). Learn how to install and remove software using <code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">apt</code> (Ubuntu's package manager — think of it as an app store for the terminal). Also learn to see what programs are currently running, and how to stop one that's misbehaving.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">sudo</span>
+          <span class="tool-chip">apt install / remove</span>
+          <span class="tool-chip">ps, top, htop</span>
+          <span class="tool-chip">kill / killall</span>
+          <span class="tool-chip">User management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step5);">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Networking Basics & SSH</span>
+          <span class="step-badge" style="background:var(--step5);">Connect Remotely</span>
+        </div>
+        <p class="step-desc">
+          In DevOps, you'll almost never physically sit in front of a server — you'll connect to it remotely over the internet using a tool called <strong>SSH</strong>. It's like a secure phone call between your laptop and a server anywhere in the world. Learn how to check your machine's IP address, ping another server to test connectivity, and use SSH to log into a remote machine. This is the gateway to working in the real cloud.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">SSH (ssh command)</span>
+          <span class="tool-chip">SSH keys (safer than passwords)</span>
+          <span class="tool-chip">ping, curl, wget</span>
+          <span class="tool-chip">ifconfig / ip addr</span>
+          <span class="tool-chip">SCP (copy files remotely)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step6);">6</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Write Your First Bash Scripts</span>
+          <span class="step-badge" style="background:var(--step6);">Automate It</span>
+        </div>
+        <p class="step-desc">
+          A Bash script is just a text file full of terminal commands that run one after another — like a to-do list your computer follows automatically. Start simple: write a script that creates a backup of a folder, or one that checks if a website is online and tells you. Variables, if/else conditions, and loops are the building blocks. Once you can write basic scripts, you've crossed the line from "Linux user" to "Linux automator."
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">#!/bin/bash (shebang)</span>
+          <span class="tool-chip">Variables & conditionals</span>
+          <span class="tool-chip">for / while loops</span>
+          <span class="tool-chip">Functions</span>
+          <span class="tool-chip">Cron jobs (scheduled tasks)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 7 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step7);">7</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Power Tools: Search, Pipes & Grep</span>
+          <span class="step-badge" style="background:var(--step7);">Work Faster</span>
+        </div>
+        <p class="step-desc">
+          The final level of Linux fluency is knowing how to chain commands together and search through things quickly. The pipe character (<code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">|</code>) lets you feed the output of one command into another — like an assembly line. <code style="background:#f0ede8;padding:1px 6px;border-radius:3px;font-size:13px;">grep</code> searches through text like Ctrl+F on steroids. These tools turn you into someone who can navigate and debug any Linux system with confidence.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">grep / grep -r</span>
+          <span class="tool-chip">Pipes ( | )</span>
+          <span class="tool-chip">find & locate</span>
+          <span class="tool-chip">awk & sed (basics)</span>
+          <span class="tool-chip">Redirects (&gt; and &gt;&gt;)</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /steps -->
+
+  <!-- TIMELINE -->
+  <div class="timeline-bar">
+    <h3>Realistic Timeline (1 Hour a Day)</h3>
+    <div class="timeline-track">
+      <div class="t-seg" style="width:14%;background:var(--step1);">Day 1–3</div>
+      <div class="t-seg" style="width:14%;background:var(--step2);">Day 4–7</div>
+      <div class="t-seg" style="width:15%;background:var(--step3);">Day 8–12</div>
+      <div class="t-seg" style="width:14%;background:var(--step4);">Day 13–17</div>
+      <div class="t-seg" style="width:14%;background:var(--step5);">Day 18–21</div>
+      <div class="t-seg" style="width:15%;background:var(--step6);">Day 22–26</div>
+      <div class="t-seg" style="width:14%;background:var(--step7);">Day 27–30</div>
+    </div>
+    <div class="timeline-labels">
+      <span>Install</span>
+      <span>Navigate</span>
+      <span>Files</span>
+      <span>Users</span>
+      <span>SSH</span>
+      <span>Scripts</span>
+      <span>Power Tools ✓</span>
+    </div>
+  </div>
+
+  <!-- TIPS GRID -->
+  <div class="section-title">4 Rules to Learn Linux Fast</div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">⌨️</div>
+      <div class="tip-title">Type Every Command</div>
+      <p class="tip-text">Don't copy-paste commands when learning. Type them out manually, even if it's slower. Your fingers need to learn this too — muscle memory is real.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">💥</div>
+      <div class="tip-title">Break Things on Purpose</div>
+      <p class="tip-text">Use your virtual machine as a sandbox. Delete things, mess up permissions, crash it. That's how you learn to fix things — and a VM means nothing real is at risk.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">📖</div>
+      <div class="tip-title">Use the Manual</div>
+      <p class="tip-text">Every Linux command has built-in help. Type <code style="background:#ede9e3;padding:1px 5px;border-radius:2px;font-size:12px;">man ls</code> or <code style="background:#ede9e3;padding:1px 5px;border-radius:2px;font-size:12px;">ls --help</code> to see exactly what it does. The answer is usually already on your machine.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🎯</div>
+      <div class="tip-title">Build a Mini Project</div>
+      <p class="tip-text">Write a script that automates something you actually do — rename files, check disk space, or send yourself an alert. A real problem makes learning stick faster than any tutorial.</p>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <div class="closing-quote">"</div>
+    <p class="closing-text">
+      The terminal looks scary the first time. It looked scary to every DevOps engineer who came before you, too. The secret is simple: <strong>use it every single day</strong>, even for small things. Open a terminal instead of a file manager. Use SSH instead of clicking into a server. Within a month, it becomes your fastest tool.
+      <br/><br/>
+      <strong>Master Linux, and the rest of DevOps becomes 10x easier.</strong>
+    </p>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
