@@ -124,11 +124,11 @@ menu:
       weight: 30
     - name: "Roadmaps"
       url: "/roadmaps/"
-      weight: 30
+      weight: 40
     - identifier: about
       name: About
       url: /about
-      weight: 40
+      weight: 50
   dropdown:
     - identifier: infrastructure as code
       name: Infrastructure as Code
