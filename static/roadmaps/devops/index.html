@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DevOps Roadmap for Beginners 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --accent: #e05c2a;
+    --accent2: #2a7ae0;
+    --muted: #6b7280;
+    --light-bg: #f7f5f0;
+    --card-bg: #ffffff;
+    --border: #e5e0d8;
+    --step1: #e05c2a;
+    --step2: #d44d8a;
+    --step3: #7c3aed;
+    --step4: #2a7ae0;
+    --step5: #059669;
+    --step6: #b45309;
+    --step7: #0891b2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--light-bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px 64px 80px;
+  }
+
+  /* HEADER */
+  .header {
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 44px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .subtitle {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 560px;
+    font-weight: 300;
+  }
+  .meta {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* INTRO */
+  .intro {
+    background: var(--ink);
+    color: white;
+    padding: 28px 32px;
+    border-radius: 4px;
+    margin-bottom: 44px;
+  }
+  .intro p {
+    font-size: 15px;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+  .intro strong {
+    color: #f8b56a;
+    font-weight: 600;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    color: var(--ink);
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  /* STEPS */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 44px;
+  }
+
+  .step {
+    display: flex;
+    gap: 0;
+    position: relative;
+  }
+
+  .step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    flex-shrink: 0;
+  }
+
+  .step-num {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 2px;
+  }
+
+  .step-line {
+    width: 2px;
+    flex: 1;
+    min-height: 20px;
+    background: var(--border);
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  .step:last-child .step-line {
+    display: none;
+  }
+
+  .step-body {
+    padding-left: 20px;
+    padding-bottom: 32px;
+    flex: 1;
+  }
+
+  .step-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+
+  .step-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .step-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    color: white;
+  }
+
+  .step-desc {
+    color: #374151;
+    font-size: 14.5px;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+
+  .tools-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .tool-chip {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--light-bg);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+
+  /* TIPS SECTION */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+
+  .tip-card {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+  .tip-icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .tip-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+
+  .tip-text {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* TIMELINE */
+  .timeline-bar {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin-bottom: 44px;
+  }
+
+  .timeline-bar h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: var(--ink);
+  }
+
+  .timeline-track {
+    display: flex;
+    gap: 0;
+    height: 36px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  .t-seg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* CLOSING */
+  .closing {
+    border-top: 3px solid var(--ink);
+    padding-top: 28px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .closing-quote {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--border);
+    flex-shrink: 0;
+    margin-top: -8px;
+  }
+
+  .closing-text {
+    font-size: 14.5px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .closing-text strong {
+    color: var(--ink);
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; }
+    .page { padding: 40px; max-width: 100%; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="tag">2025 Edition</div>
+    <h1>The DevOps Roadmap<br/>for <em>Complete Beginners</em></h1>
+    <p class="subtitle">A plain-English, step-by-step guide to starting your journey into one of tech's most in-demand careers — no experience needed.</p>
+    <div class="meta">Updated May 2025 &nbsp;·&nbsp; 7-Stage Roadmap &nbsp;·&nbsp; 6–12 Month Journey</div>
+  </div>
+
+  <!-- INTRO BOX -->
+  <div class="intro">
+    <p>
+      <strong>What is DevOps?</strong> Simply put, DevOps is the bridge between the people who <em>write</em> software (developers) and the people who <em>run</em> it (operations). DevOps engineers make sure code gets from a developer's laptop to users' screens — fast, reliably, and automatically. Think of it as the plumbing and automation that makes modern apps work smoothly.
+      <br/><br/>
+      The demand is real: <strong>over 75% of tech companies</strong> now use DevOps practices, and skilled engineers command strong salaries worldwide. This roadmap gives you a clear, honest path — one step at a time.
+    </p>
+  </div>
+
+  <!-- ROADMAP STEPS -->
+  <div class="section-title">Your 7-Stage Roadmap</div>
+
+  <div class="steps">
+
+    <!-- STEP 1 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step1);">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Learn Linux & The Command Line</span>
+          <span class="step-badge" style="background:var(--step1);">Foundation</span>
+        </div>
+        <p class="step-desc">
+          Almost every server in the world runs Linux. Before anything else, you need to be comfortable typing commands in a terminal. Learn how to navigate folders, create and edit files, install software, and write basic shell scripts. It sounds intimidating at first, but within a few weeks it becomes second nature.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Linux (Ubuntu)</span>
+          <span class="tool-chip">Bash scripting</span>
+          <span class="tool-chip">Terminal commands</span>
+          <span class="tool-chip">SSH</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step2);">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Master Git & Version Control</span>
+          <span class="step-badge" style="background:var(--step2);">Must-Have</span>
+        </div>
+        <p class="step-desc">
+          Git is how developers track changes to code — like a "save history" for software. As a DevOps engineer, Git is non-negotiable. Learn how to clone a project, create branches, commit changes, and merge code. GitHub and GitLab are the platforms where all of this happens in the real world.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Git</span>
+          <span class="tool-chip">GitHub</span>
+          <span class="tool-chip">GitLab</span>
+          <span class="tool-chip">Branching & Merging</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step3);">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Pick Up a Scripting Language</span>
+          <span class="step-badge" style="background:var(--step3);">Automate Everything</span>
+        </div>
+        <p class="step-desc">
+          DevOps is all about automation — making repetitive tasks run themselves. Python is the best choice for beginners because it reads almost like plain English. You don't need to become a full software developer, but you should be able to write small scripts that automate tasks like backups, deployments, or sending alerts.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Python</span>
+          <span class="tool-chip">Bash scripting</span>
+          <span class="tool-chip">YAML</span>
+          <span class="tool-chip">JSON</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step4);">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Understand Cloud Basics</span>
+          <span class="step-badge" style="background:var(--step4);">Where Apps Live</span>
+        </div>
+        <p class="step-desc">
+          The "cloud" just means someone else's computers — giant data centers you can rent. Pick one cloud platform and learn its basics: how to create a virtual machine, store files, and set up simple networking. AWS is the most popular, but Azure or Google Cloud work too. Start with the free tier — it's enough to practice on.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">AWS (recommended)</span>
+          <span class="tool-chip">Azure</span>
+          <span class="tool-chip">Google Cloud</span>
+          <span class="tool-chip">Virtual Machines</span>
+          <span class="tool-chip">IAM & Security</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step5);">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Learn Docker & Containers</span>
+          <span class="step-badge" style="background:var(--step5);">Modern Packaging</span>
+        </div>
+        <p class="step-desc">
+          Imagine packing an entire app — with all its settings and dependencies — into a neat box that works identically on any computer. That box is called a <strong>container</strong>, and Docker is the tool that creates them. This is one of the most important skills in modern DevOps. Once you understand Docker, Kubernetes (which manages many containers at once) is the natural next step.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Docker</span>
+          <span class="tool-chip">Docker Compose</span>
+          <span class="tool-chip">Kubernetes (basics)</span>
+          <span class="tool-chip">Container images</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step6);">6</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Set Up CI/CD Pipelines</span>
+          <span class="step-badge" style="background:var(--step6);">The Core Skill</span>
+        </div>
+        <p class="step-desc">
+          CI/CD stands for Continuous Integration / Continuous Deployment. In plain English: every time a developer pushes new code, an automated pipeline runs tests and ships the code to users — no manual steps needed. Building these pipelines <em>is</em> the job of a DevOps engineer. This is where everything you've learned so far comes together.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">GitHub Actions</span>
+          <span class="tool-chip">Jenkins</span>
+          <span class="tool-chip">GitLab CI</span>
+          <span class="tool-chip">Automated testing</span>
+          <span class="tool-chip">Deployments</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 7 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step7);">7</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Infrastructure as Code & Monitoring</span>
+          <span class="step-badge" style="background:var(--step7);">Level Up</span>
+        </div>
+        <p class="step-desc">
+          Instead of clicking around to set up servers manually, you write code that creates entire infrastructure automatically. That's Infrastructure as Code (IaC) — and Terraform is the tool everyone uses. Pair this with monitoring tools that watch your systems and alert you when something breaks. These skills take you from junior to mid-level DevOps engineer.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Terraform</span>
+          <span class="tool-chip">Ansible</span>
+          <span class="tool-chip">Prometheus</span>
+          <span class="tool-chip">Grafana</span>
+          <span class="tool-chip">Datadog</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /steps -->
+
+  <!-- TIMELINE -->
+  <div class="timeline-bar">
+    <h3>Realistic Timeline (Part-Time Learner)</h3>
+    <div class="timeline-track">
+      <div class="t-seg" style="width:14%;background:var(--step1);">Month 1</div>
+      <div class="t-seg" style="width:14%;background:var(--step2);">Month 2</div>
+      <div class="t-seg" style="width:14%;background:var(--step3);">Month 3</div>
+      <div class="t-seg" style="width:14%;background:var(--step4);">Month 4</div>
+      <div class="t-seg" style="width:15%;background:var(--step5);">Month 5–6</div>
+      <div class="t-seg" style="width:15%;background:var(--step6);">Month 7–8</div>
+      <div class="t-seg" style="width:14%;background:var(--step7);">Month 9–12</div>
+    </div>
+    <div class="timeline-labels">
+      <span>Linux &amp; Git</span>
+      <span>Scripting</span>
+      <span>Cloud</span>
+      <span>Docker</span>
+      <span>CI/CD</span>
+      <span>IaC &amp; Monitor</span>
+      <span>Job-Ready ✓</span>
+    </div>
+  </div>
+
+  <!-- TIPS GRID -->
+  <div class="section-title">4 Rules to Stay on Track</div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">🧱</div>
+      <div class="tip-title">One Thing at a Time</div>
+      <p class="tip-text">Don't jump ahead. DevOps has dozens of tools — but mastering one thing before moving on is what actually works. Resist the shiny-object trap.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🔨</div>
+      <div class="tip-title">Build Real Projects</div>
+      <p class="tip-text">Reading tutorials is not enough. Deploy a personal website, automate a task on your laptop, or set up a free AWS server. Hands-on beats theory every time.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">📜</div>
+      <div class="tip-title">Get One Certification</div>
+      <p class="tip-text">The AWS Cloud Practitioner or Google Cloud Associate certification costs little, proves your knowledge, and makes your résumé stand out immediately.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🌐</div>
+      <div class="tip-title">Join the Community</div>
+      <p class="tip-text">DevOps has a massive online community. Follow DevOps engineers on LinkedIn, join Discord servers, and read dev.to / roadmap.sh. The network matters.</p>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <div class="closing-quote">"</div>
+    <p class="closing-text">
+      You don't need a computer science degree, years of experience, or even a fancy laptop to start this journey. What you need is <strong>consistency</strong> — 1 hour a day, every day, for a year. Thousands of people have made this exact transition. The tools are free. The tutorials are free. The only cost is time.<br/><br/>
+      <strong>Start with Linux. Everything else follows.</strong>
+    </p>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
